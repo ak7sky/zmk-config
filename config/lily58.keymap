@@ -43,7 +43,7 @@
 &trans  &trans    &trans       &trans             &trans            &trans                           &trans            &trans             &trans                &trans                 &trans         &trans
 &trans  &trans    &kp DOLLAR   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
 &trans  &kp EXCL  &kp AT_SIGN  &kp AMPERSAND      &kp PIPE          &kp PRCNT                        &kp PLUS          &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
-&trans  &trans    &kp POUND    &kp UNDERSCORE     &kp TILDE         &kp CARET  &trans    &trans      &kp MINUS         &kp ASTERISK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION   &trans
+&trans  &trans    &kp POUND    &kp UNDERSCORE     &kp TILDE         &kp CARET  &trans    &trans      &kp MINUS         &kp ASTERISK       &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION   &trans
                                &trans             &trans            &trans     &trans    &kp ESCAPE  &trans            &kp LC(BACKSPACE)  &trans
             >;
 
