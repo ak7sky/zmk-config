@@ -25,13 +25,13 @@
 &kp TAB        &kp Q   &kp W   &kp E       &kp R        &kp T                                            &kp Y       &kp U        &kp I       &kp O    &kp P     &kp INS
 &kp CAPSLOCK   &kp A   &kp S   &mt LALT D  &mt LCTRL F  &mt LGUI G                                       &mt RGUI H  &mt RCTRL J  &mt RALT K  &kp L    &kp SEMI  &kp SQT
 &kp LG(SPACE)  &kp Z   &kp X   &kp C       &kp V        &kp B       &kp LBKT            &kp RBKT         &kp N       &kp M        &kp COMMA   &kp DOT  &kp FSLH  &kp PRINTSCREEN
-                               &none       &none        &mo 1       &mt LSHIFT SPACE    &mt RSHFT ENTER  &mo 2       &kp BSPC     &none
+                               &none       &mo 3        &mo 1       &mt LSHIFT SPACE    &mt RSHFT ENTER  &mo 2       &kp BSPC     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        lower_layer {
+        coding {
             // --------------------------------------------------------------------------------------------------------------
             // | LPAD  | BRDn | BRUp |  MUT |  Vo- |  Vo+ |                   |      |       |       |      |       |       |
             // |  F1   |  F2  |  F3  |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
@@ -40,17 +40,17 @@
             //                       |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&trans  &trans    &trans       &trans             &trans            &trans                           &trans         &trans             &trans                &trans                 &trans         &trans
-&trans  &trans    &trans       &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE                        &kp AMPERSAND  &kp PLUS           &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
-&trans  &kp EXCL  &kp AT_SIGN  &kp HASH           &kp DOLLAR        &kp PRCNT                        &kp ASTERISK   &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
-&trans  &trans    &trans       &kp UNDERSCORE     &kp TILDE         &kp CARET  &trans    &trans      &kp PIPE       &kp MINUS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &trans
-                               &trans             &trans            &trans     &trans    &kp ESCAPE  &trans         &kp LC(BACKSPACE)  &trans
+&trans  &trans    &trans       &trans             &trans            &trans                           &trans            &trans             &trans                &trans                 &trans         &trans
+&trans  &trans    &kp DOLLAR   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE                        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
+&trans  &kp EXCL  &kp AT_SIGN  &kp AMPERSAND      &kp PIPE          &kp PRCNT                        &kp PLUS          &kp EQUAL          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON      &trans
+&trans  &trans    &kp POUND    &kp UNDERSCORE     &kp TILDE         &kp CARET  &trans    &trans      &kp MINUS         &kp ASTERISK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION   &trans
+                               &trans             &trans            &trans     &trans    &kp ESCAPE  &trans            &kp LC(BACKSPACE)  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        raise_layer {
+        nums,movement,control {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
